@@ -1,4 +1,4 @@
-sasasasasasasas
+## AWS IAM
 
 - List AWS Roles:
 ```bash
@@ -52,4 +52,20 @@ $ aws iam list-roles | grep RoleName
 $ aws iam list-roles | grep RoleName | wc -l
 14
 ```
-- sasasas
+## AWS EC2
+- Run the command to list the security groups:
+```bash
+$ aws ec2 describe-security-groups | grep GroupName
+            "GroupName": "launch-wizard-6",
+            "GroupName": "launch-wizard-12",
+            "GroupName": "default",
+            "GroupName": "launch-wizard-15",
+            "GroupName": "launch-wizard-5",
+            "GroupName": "launch-wizard-9",
+            "GroupName": "launch-wizard-8",
+            "GroupName": "ec2group1234",
+            "GroupName": "launch-wizard-17",
+            "GroupName": "launch-wizard-19",
+            "GroupName": "default",
+            "GroupName": "launch-wizard-18",
+```

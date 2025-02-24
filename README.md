@@ -24,3 +24,28 @@ The **`awscli-security-demo`** project is designed to showcase best practices fo
    ```bash
    git clone https://github.com/yourusername/awscli-security-demo.git
    cd awscli-security-demo
+
+## Usage Examples
+- IAM Role Creation:
+```bash
+aws iam create-role --role-name MyRole --assume-role-policy-document file://trust-policy.json
+```
+- S3 Bucket Policy:
+```bash
+aws s3api put-bucket-policy --bucket my-bucket --policy file://bucket-policy.json
+```
+- Enable CloudTrail:
+```bash
+aws cloudtrail create-trail --name MyTrail --s3-bucket-name my-cloudtrail-bucket
+```
+
+## Contributing
+Contributions are welcome! If you have suggestions for improvements or new features, please create an issue or submit a pull request.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+- [AWS Documentation](https://docs.aws.amazon.com/)
+- [AWS CLI Documentation](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
+
